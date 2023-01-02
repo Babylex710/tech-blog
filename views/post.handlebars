@@ -1,0 +1,50 @@
+ <div class="row border border-dark">
+    <div class="col border border-dark bg-dark" id="dashboard-post-title">
+      {{post.title}}
+    </div>
+    <div class="col border border-dark bg-dark" id="dashboard-post-info">Posted
+      by
+      {{post.user.username}}
+      on
+      {{format_date post.date_created}}</div>
+    <div class="text-left">{{post.body}}</div>
+  </div>
+  {{#each post.comments}}
+    <div class="container border border-dark m-2">
+      <div class="row">
+        <div class="col border boder-dark bg-dark">Column</div>
+        <div class="w-100"></div>
+        <div class="col">{{body}}</div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+{{#if logged_in}}
+  <form class="comment-form m-2">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="mb-3">
+        <input type="hidden" name="post-id" value="{{post.id}}" />
+        <label for="comment-post" class="form-label">Comment</label>
+        <input type="text" class="form-control-lg w-100" id="comment-post" />
+      </div>
+      <div class="form-group mb-3">
+        <button type="submit" class="btn btn-secondary w-100" >Submit</button>
+      </div>
+    </div>
+  </form>
+{{/if}}
+
+{{!-- <div class="container">
+    {{#each post.comments}}
+      <div class="row border border-dark">
+        <div class="col border border-dark bg-dark" id="comment-post">
+        </div>
+        <div class="text-left">{{body}}</div>
+      </div>
+    {{/each}}
+  </div> --}}
+
+<script src="/js/comment.js"></script>

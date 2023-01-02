@@ -1,0 +1,12 @@
+<div class="container">
+  {{#each posts}}
+    <div class="row m-5 border border-dark bg-secondary text-white rounded">
+      <div class="col text-left">
+        <a href="/dashboard/edit/{{id}}" class="text-white">{{title}}</a>
+      </div>
+      <div class="col text-center">
+        {{format_date date_created}}
+      </div>
+    </div>
+  {{/each}}
+</div>

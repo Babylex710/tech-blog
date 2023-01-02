@@ -1,0 +1,71 @@
+.container {
+    background-color: var(--green);
+  }
+  
+  /* login href */
+  #login {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* logout href */
+  .logout {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* dashboard href */
+  .dashboard {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* home href */
+  .home {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .header {
+    background-color: var(--green);
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  /* homepage */
+  #home-post-title {
+    color: var(--green);
+  }
+  
+  /* homepage */
+  #home-post-info {
+    text-align: right;
+    color: var(--green);
+  }
+  
+  /* dashboard */
+  #dashboard-post-title {
+    color: var(--green);
+  }
+  
+  #dashboard-post-info {
+    text-align: right;
+    color: var(--green);
+  }
+  
+  #main-body {
+    background-color: var(--green);
+  }
+  
+  #dashboard-body {
+    background-color: var(--green);
+  }
+  
+  :root {
+    --green: rgb(196, 216, 196);
+  }
