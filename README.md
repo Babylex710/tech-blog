@@ -6,6 +6,9 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 
 ## Usage
 
-Link to the deployed application can be tested here on Heroku:
+Link to the deployed application on Heroku: https://lexi-tech-blog.herokuapp.com/
 
+## Screenshot
+
+![alt screenshot](./public/images/tech-blog.png)
 
